@@ -1,7 +1,7 @@
 <?php
 return [
     'backend' => [
-        'frontName' => 'super_admin'
+        'frontName' => 'khanh13backend'
     ],
     'remote_storage' => [
         'driver' => 'file'
@@ -33,7 +33,7 @@ return [
         'table_prefix' => '',
         'connection' => [
             'default' => [
-                'host' => 'db',
+                'host' => 'localhost',
                 'dbname' => 'magentoDB',
                 'username' => 'magento',
                 'password' => '12345678',
@@ -81,6 +81,6 @@ return [
         'translate' => 1
     ],
     'install' => [
-        'date' => 'Sat, 28 Sep 2024 14:32:48 +0000'
+        'date' => 'Sun, 29 Sep 2024 06:35:40 +0000'
     ]
 ];

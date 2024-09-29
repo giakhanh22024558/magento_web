@@ -7,7 +7,7 @@ echo '127.0.0.1 webtest.net' >> /etc/hosts
 service elasticsearch start
 
 # Start PHP-FPM
-php8.3-fpm -F &
+service php8.3-fpm start 
 
 # Start Nginx
 nginx -g 'daemon off;'

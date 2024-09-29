@@ -8,10 +8,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
-    nginx \
+    # nginx \
     mysql-client \
     php \
-    php-fpm \
+    # php-fpm \
     php-cli \
     php-xml \
     php-mysql \
@@ -38,7 +38,7 @@ RUN PHP_VERSION=$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;") \
     && sed -i "s/max_execution_time = .*/max_execution_time = 1800/" /etc/php/$PHP_VERSION/cli/php.ini \
     && sed -i "s/zlib.output_compression = .*/zlib.output_compression = On/" /etc/php/$PHP_VERSION/cli/php.ini 
 
-WORKDIR /var/www/html 
+WORKDIR /var/www/html
 
 RUN wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add - \
     && echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | tee -a /etc/apt/sources.list.d/elastic-7.x.list \

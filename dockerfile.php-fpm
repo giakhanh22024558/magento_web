@@ -1,0 +1,36 @@
+# Dockerfile.php-fpm
+FROM php:8.3-fpm
+
+# Install necessary extensions and utilities
+RUN apt-get update && apt-get install -y \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    libicu-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    libzip-dev \
+    libonig-dev \
+    libcurl4-openssl-dev \
+    libedit-dev \
+    libssl-dev \
+    libsqlite3-dev \
+    iputils-ping \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) \
+    bcmath \
+    ctype \
+    curl \
+    dom \
+    gd \
+    intl \
+    mbstring \
+    pdo \
+    pdo_mysql \
+    simplexml \
+    soap \
+    xsl \
+    zip \
+    opcache \
+    sockets \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*

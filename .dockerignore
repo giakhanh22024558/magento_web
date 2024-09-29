@@ -4,3 +4,6 @@ node_modules/
 .gitignore
 Dockerfile
 docker-compose.yml
+magentoDB/
+nginx_conf/
+start_service.sh
