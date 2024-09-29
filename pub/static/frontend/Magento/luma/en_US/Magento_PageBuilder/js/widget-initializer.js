@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-page-builder/view/base/web/js/widget-initializer.js

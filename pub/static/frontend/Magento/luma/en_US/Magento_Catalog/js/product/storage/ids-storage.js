@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-catalog/view/frontend/web/js/product/storage/ids-storage.js

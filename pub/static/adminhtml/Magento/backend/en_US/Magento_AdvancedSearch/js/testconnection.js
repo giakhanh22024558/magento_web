@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-advanced-search/view/adminhtml/web/js/testconnection.js

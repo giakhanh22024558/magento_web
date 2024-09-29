@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/lib/web/js-storage/js.storage.js

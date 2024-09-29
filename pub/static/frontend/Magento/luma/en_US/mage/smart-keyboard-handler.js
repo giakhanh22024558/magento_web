@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/lib/web/mage/smart-keyboard-handler.js
