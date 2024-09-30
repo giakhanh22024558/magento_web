@@ -8,7 +8,7 @@ services:
   #   depends_on:
   #     - db
 
-  localhost:
+  db:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
@@ -35,7 +35,7 @@ services:
       - ./nginx_conf:/etc/nginx/conf.d
     depends_on:
       - php-fpm
-      - localhost
+      - db
 
 volumes:
   db_data:

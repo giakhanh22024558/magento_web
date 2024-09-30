@@ -2215,7 +2215,7 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (9, 'default', 0, 'msp_securitysuite_recaptcha/backend/enabled', '0', '2024-09-09 13:55:50'),
 (10, 'default', 0, 'catalog/search/engine', 'elasticsearch7', '2024-09-28 14:23:09'),
 (11, 'default', 0, 'web/seo/use_rewrites', '1', '2024-09-09 14:06:33'),
-(12, 'default', 0, 'web/unsecure/base_url', 'http://webtest.net/', '2024-09-28 14:32:47'),
+(12, 'default', 0, 'web/unsecure/base_url', 'http://webtest.docker.net/', '2024-09-28 14:32:47'),
 (13, 'default', 0, 'general/locale/code', 'en_US', '2024-09-09 14:06:33'),
 (14, 'default', 0, 'general/locale/timezone', 'Asia/Jakarta', '2024-09-28 13:46:15'),
 (15, 'default', 0, 'currency/options/base', 'VND', '2024-09-28 13:46:15'),
