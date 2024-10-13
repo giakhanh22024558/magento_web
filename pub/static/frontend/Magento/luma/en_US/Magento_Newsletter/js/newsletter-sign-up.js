@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-newsletter/view/frontend/web/js/newsletter-sign-up.js

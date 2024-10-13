@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RectorPrefix202409\Symfony\Component\Yaml;
+namespace RectorPrefix202410\Symfony\Component\Yaml;
 
-use RectorPrefix202409\Symfony\Component\Yaml\Exception\DumpException;
-use RectorPrefix202409\Symfony\Component\Yaml\Exception\ParseException;
-use RectorPrefix202409\Symfony\Component\Yaml\Tag\TaggedValue;
+use RectorPrefix202410\Symfony\Component\Yaml\Exception\DumpException;
+use RectorPrefix202410\Symfony\Component\Yaml\Exception\ParseException;
+use RectorPrefix202410\Symfony\Component\Yaml\Tag\TaggedValue;
 /**
  * Inline implements a YAML parser/dumper for the YAML inline syntax.
  *
@@ -332,11 +332,17 @@ class Inline
         $len = \strlen($sequence);
         ++$i;
         // [foo, bar, ...]
+        $lastToken = null;
         while ($i < $len) {
             if (']' === $sequence[$i]) {
                 return $output;
             }
             if (',' === $sequence[$i] || ' ' === $sequence[$i]) {
+                if (',' === $sequence[$i] && (null === $lastToken || 'separator' === $lastToken)) {
+                    $output[] = null;
+                } elseif (',' === $sequence[$i]) {
+                    $lastToken = 'separator';
+                }
                 ++$i;
                 continue;
             }
@@ -372,6 +378,7 @@ class Inline
                 $value = new TaggedValue($tag, $value);
             }
             $output[] = $value;
+            $lastToken = 'value';
             ++$i;
         }
         throw new ParseException(\sprintf('Malformed inline YAML string: "%s".', $sequence), self::$parsedLineNumber + 1, null, self::$parsedFilename);

@@ -88,3 +88,67 @@
 [2024-09-30T05:29:25.702763+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
 [2024-09-30T05:29:25.898543+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
 [2024-09-30T05:29:26.157869+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-09-30T06:13:24.604389+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-09-30T06:13:24.901872+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-09-30T06:28:43.139524+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-09-30T06:28:43.337978+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-09-30T06:30:18.624925+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-09-30T06:30:20.337950+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-10-01T05:33:53.641728+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-10-01T05:33:53.803997+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-10-01T05:36:15.401552+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:36:33.678586+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:41:29.926258+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:43:11.004091+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:43:11.127591+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:47:15.918320+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:50:30.783918+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:50:37.784659+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T05:50:47.021991+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:02:28.830770+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:06.265687+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:30.233179+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:33.567429+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:34.134395+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:34.544378+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:34.741281+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:34.927547+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:35.098963+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:35.296253+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:35.484883+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:35.654082+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:35.904854+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:36.079340+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:36.277851+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:37.911438+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:04:38.107250+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:08:14.567331+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:08:14.697993+00:00] main.ERROR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for 9dbeca40e8a0 failed: Temporary failure in name resolution [] []
+[2024-10-01T06:15:24.597388+00:00] main.ERROR: SQLSTATE[HY000] [2002] No such file or directory [] []
+[2024-10-12T08:21:50.445170+00:00] main.ERROR: There are no commands defined in the "route" namespace.
+#0 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(720): Symfony\Component\Console\Application->findNamespace()
+#1 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(266): Symfony\Component\Console\Application->find()
+#2 /var/www/webtest/magnetotest2/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun()
+#3 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun()
+#4 /var/www/webtest/magnetotest2/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2024-10-12T08:22:36.206430+00:00] main.ERROR: Command "cache:clear" is not defined.
+
+Did you mean one of these?
+    cache:clean
+    cache:disable
+    cache:enable
+    cache:flush
+    cache:status
+#0 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(266): Symfony\Component\Console\Application->find()
+#1 /var/www/webtest/magnetotest2/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun()
+#2 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun()
+#3 /var/www/webtest/magnetotest2/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2024-10-12T08:32:13.925109+00:00] main.ERROR: There are no commands defined in the "route" namespace.
+#0 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(720): Symfony\Component\Console\Application->findNamespace()
+#1 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(266): Symfony\Component\Console\Application->find()
+#2 /var/www/webtest/magnetotest2/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun()
+#3 /var/www/webtest/magnetotest2/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun()
+#4 /var/www/webtest/magnetotest2/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []

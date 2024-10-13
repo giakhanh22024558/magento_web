@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/lib/web/mage/adminhtml/browser.js

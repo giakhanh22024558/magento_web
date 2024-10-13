@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-login-as-customer-assistance/view/frontend/web/js/opt-in.js

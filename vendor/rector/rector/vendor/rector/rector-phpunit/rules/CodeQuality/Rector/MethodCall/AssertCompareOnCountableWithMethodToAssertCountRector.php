@@ -16,7 +16,7 @@ use Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
  * @see \Rector\PHPUnit\Tests\CodeQuality\Rector\MethodCall\AssertCompareOnCountableWithMethodToAssertCountRector\AssertCompareOnCountableWithMethodToAssertCountRectorTest
  */
-class AssertCompareOnCountableWithMethodToAssertCountRector extends AbstractRector
+final class AssertCompareOnCountableWithMethodToAssertCountRector extends AbstractRector
 {
     /**
      * @readonly
@@ -51,6 +51,9 @@ CODE_SAMPLE
     public function refactor(Node $node)
     {
         if (!$this->testsNodeAnalyzer->isPHPUnitMethodCallNames($node, ['assertSame', 'assertEquals'])) {
+            return null;
+        }
+        if ($node->isFirstClassCallable()) {
             return null;
         }
         if (\count($node->getArgs()) < 2) {

@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-page-builder/view/adminhtml/web/js/master-format/filter-html.js

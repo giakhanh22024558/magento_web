@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RectorPrefix202409\Symfony\Component\Filesystem;
+namespace RectorPrefix202410\Symfony\Component\Filesystem;
 
-use RectorPrefix202409\Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use RectorPrefix202409\Symfony\Component\Filesystem\Exception\InvalidArgumentException;
-use RectorPrefix202409\Symfony\Component\Filesystem\Exception\IOException;
+use RectorPrefix202410\Symfony\Component\Filesystem\Exception\FileNotFoundException;
+use RectorPrefix202410\Symfony\Component\Filesystem\Exception\InvalidArgumentException;
+use RectorPrefix202410\Symfony\Component\Filesystem\Exception\IOException;
 /**
  * Provides basic utility to manipulate the file system.
  *
@@ -211,6 +211,9 @@ class Filesystem
     /**
      * Change the owner of an array of files or directories.
      *
+     * This method always throws on Windows, as the underlying PHP function is not supported.
+     * @see https://www.php.net/chown
+     *
      * @param string|int $user      A user name or number
      * @param bool       $recursive Whether change the owner recursively or not
      *
@@ -238,6 +241,9 @@ class Filesystem
     }
     /**
      * Change the group of an array of files or directories.
+     *
+     * This method always throws on Windows, as the underlying PHP function is not supported.
+     * @see https://www.php.net/chgrp
      *
      * @param string|int $group     A group name or number
      * @param bool       $recursive Whether change the group recursively or not
@@ -598,6 +604,9 @@ class Filesystem
             $this->rename($tmpFile, $filename, \true);
         } finally {
             if (\file_exists($tmpFile)) {
+                if ('\\' === \DIRECTORY_SEPARATOR && !\is_writable($tmpFile)) {
+                    self::box('chmod', $tmpFile, self::box('fileperms', $tmpFile) | 0200);
+                }
                 self::box('unlink', $tmpFile);
             }
         }

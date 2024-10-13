@@ -1,6 +1,6 @@
 <?php
 
-namespace RectorPrefix202409\Psr\Log;
+namespace RectorPrefix202410\Psr\Log;
 
 /**
  * Describes a logger instance.
@@ -89,6 +89,7 @@ interface LoggerInterface
     /**
      * Logs with an arbitrary level.
      *
+     * @param mixed $level
      * @param mixed[] $context
      *
      * @throws \Psr\Log\InvalidArgumentException

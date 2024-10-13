@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-review/view/frontend/web/js/validate-review.js

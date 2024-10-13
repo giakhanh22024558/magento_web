@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-product-video/view/adminhtml/web/js/new-video-dialog.js

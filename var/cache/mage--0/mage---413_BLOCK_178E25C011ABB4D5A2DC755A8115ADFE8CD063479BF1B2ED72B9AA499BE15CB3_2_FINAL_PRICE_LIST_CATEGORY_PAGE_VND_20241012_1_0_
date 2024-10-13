@@ -1,0 +1,13 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1728724305;s:6:"expire";i:1728810705;s:4:"tags";s:45:"413_BLOCK_HTML,413_CAT_P_2,413_CAT_P,413_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="2" data-price-box="product-id-2">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="product-price-2"                data-price-amount="10000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">₫10,000.00</span></span>
+        </span>
+
+</div>

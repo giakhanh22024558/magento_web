@@ -15,7 +15,7 @@ use PHPStan\Type\IntegerType;
 use PHPStan\Type\Type;
 use PHPStan\Type\UnionType;
 use Rector\Php80\ValueObject\AnnotationToAttribute;
-use RectorPrefix202409\Webmozart\Assert\Assert;
+use RectorPrefix202410\Webmozart\Assert\Assert;
 final class AnnotationToAttributeIntegerValueCaster
 {
     /**
@@ -90,7 +90,7 @@ final class AnnotationToAttributeIntegerValueCaster
     private function resolveConstructorParameterReflections(ClassReflection $classReflection) : array
     {
         $extendedMethodReflection = $classReflection->getConstructor();
-        $parametersAcceptorWithPhpDocs = ParametersAcceptorSelector::selectSingle($extendedMethodReflection->getVariants());
+        $parametersAcceptorWithPhpDocs = ParametersAcceptorSelector::combineAcceptors($extendedMethodReflection->getVariants());
         return $parametersAcceptorWithPhpDocs->getParameters();
     }
 }

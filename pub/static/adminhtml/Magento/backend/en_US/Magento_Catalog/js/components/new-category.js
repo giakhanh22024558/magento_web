@@ -1,0 +1,1 @@
+/var/www/webtest/magnetotest2/vendor/magento/module-catalog/view/adminhtml/web/js/components/new-category.js

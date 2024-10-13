@@ -1,14 +1,14 @@
 <?php
 
-namespace RectorPrefix202409\Illuminate\Container;
+namespace RectorPrefix202410\Illuminate\Container;
 
 use ArrayAccess;
 use Closure;
 use Exception;
-use RectorPrefix202409\Illuminate\Contracts\Container\BindingResolutionException;
-use RectorPrefix202409\Illuminate\Contracts\Container\CircularDependencyException;
-use RectorPrefix202409\Illuminate\Contracts\Container\Container as ContainerContract;
-use RectorPrefix202409\Illuminate\Contracts\Container\ContextualAttribute;
+use RectorPrefix202410\Illuminate\Contracts\Container\BindingResolutionException;
+use RectorPrefix202410\Illuminate\Contracts\Container\CircularDependencyException;
+use RectorPrefix202410\Illuminate\Contracts\Container\Container as ContainerContract;
+use RectorPrefix202410\Illuminate\Contracts\Container\ContextualAttribute;
 use LogicException;
 use ReflectionAttribute;
 use ReflectionClass;
@@ -927,6 +927,9 @@ class Container implements ArrayAccess, ContainerContract
         if ($parameter->isVariadic()) {
             return [];
         }
+        if ($parameter->hasType() && $parameter->allowsNull()) {
+            return null;
+        }
         $this->unresolvablePrimitive($parameter);
     }
     /**
@@ -1292,10 +1295,7 @@ class Container implements ArrayAccess, ContainerContract
      */
     public static function getInstance()
     {
-        if (\is_null(static::$instance)) {
-            static::$instance = new static();
-        }
-        return static::$instance;
+        return static::$instance = static::$instance ?? new static();
     }
     /**
      * Set the shared instance of the container.
